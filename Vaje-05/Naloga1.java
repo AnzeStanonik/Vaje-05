@@ -1,17 +1,29 @@
-import java.util.Scanner;
-class Naloga1{
-    public static void main(String[] args){
-        int stevec = 1;
-        while (stevec < 11) {
-            System.out.print(stevec + " ");
-            stevec++;
-        }   
-        System.out.println();
-        stevec = 2;
-        int stevec_presledkov = (stevec*2);
-        while (stevec < 11) {
-            System.out.println(stevec); 
-            stevec++;
+class Naloga1 {
+    public static void main(String[] args) {
+        int i = 1;
+        while(i <= 10) {
+            System.out.print(i + " ");
+            i++;
+        }
+        int f = 1;
+        int g;
+        int h = 0;
+        int a;
+        System.out.println("");
+         while(f <= 9) {
+             f++;
+             g = f * 2 - 2;
+             a = g;
+            while(h < g) {
+                System.out.print(" ");
+                h++;
+                a--;
+            }
+            a++;
+            while(h >= a){
+                    h--;
+                }
+            System.out.println(f);
         }
     }
 }
